@@ -6,6 +6,7 @@ print (greatEveryone());
   print('Suma flecha: ${ addTwoNumbers1(5,10) }');
   print ('Suma opcional:${addTwoNumbersOptional(20)}');
   
+  print (greetPerson (name: 'Paul', message: 'Hi, '));
 }
 
 String greatEveryone (){
@@ -25,4 +26,6 @@ int addTwoNumbersOptional (int a, [int b=0]){//los corchetes nos indican que el 
   return a+b;
 }
 
-
+String greetPerson ({required name, String message = 'Hola, '}){
+  return '$message $name';
+}
